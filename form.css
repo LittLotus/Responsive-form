@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-image: url(bg-intro-desktop.png);
+    background-repeat: no-repeat;
+background-color: hsl(0, 100%, 74%);
+background-size: cover;
+}
+main{
+    display: flex;
+   margin: auto;
+   padding: 0 5em;
+   width: 80%;
+   justify-content: center;
+   align-items: center;
+}
+
+.right{
+    margin: auto;
+ max-width: 50%;
+  color: whitesmoke;
+
+}
+
+.right h2{
+    padding-bottom: 1em;
+}
+.left{
+ max-width: 50%;
+   margin: 2em 0;
+   display: block;
+   
+}
+.left input{
+    display: block;
+    padding: 9px;
+    margin: 10px 1em;
+    border-radius: 3px;
+    border:  transparent ;
+width:90%;
+    outline: none;
+}
+
+.form_top{
+    max-width: 100%;
+    background-color: hsl(274, 54%, 31%);
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+    margin: 7px 0;
+    border-radius: 3px;
+}
+
+.form_body{
+    background-color: whitesmoke;
+   padding: 1em;
+   border-radius: 3px;
+}
+.submit{
+   width: 100%;
+    background-color: hsl(154, 59%, 51%);
+color: white;
+border: none;
+padding: 11px;
+border-radius: 3px; 
+display: block;
+width: 100%;
+margin-bottom:9px ;
+}
+.form_body a{
+    text-decoration: none;
+    color:hsl(0, 100%, 74%) ;
+}
+a:hover{
+text-decoration: underline;
+text-decoration-color: hsl(0, 100%, 74%);
+}
+
+input:required:invalid{
+    background-image: url(icon-error.svg);
+    background-position:right center;
+    background-repeat: no-repeat;
+    outline: none;
+    border:  1px solid hsl(0, 100%, 74%) ;
+   
+}
+
+
+input:invalid+small{
+    display: inline;
+    float: right;
+    margin: -4px 0 13px 3px;
+    color: hsl(0, 100%, 74%) ;
+}
+small{
+    display: none;
+}
+input:valid{
+    outline: none;
+    border: none;
+    border: 1px solid hsla(150, 3%, 25%, 0.871);
+}
+
+
+
+/* @media screen (max-width:1440px) {
+    
+} */
+
+@media screen and (max-width:375px){
+
+    body{
+        background-image: url(big-intro-mobile.png);
+        background-repeat: no-repeat;
+    background-color: hsl(0, 100%, 74%);
+    background-size: cover;
+    }
+
+    main, .right, .left{
+        width: 100%;
+
+    
+    
+}}

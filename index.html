@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <main>
+      
+      <div class="right">
+        <h2>Learn to code by watching others</h2>
+
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great,but understanding how developers think is
+          invaluable. <br />
+        </p>
+      </div>
+      <form action="" class="left">
+        <div class="form_top">
+          <p><strong> Try it free 7 days</strong> then $20/mo. thereafter</p>
+        </div>
+        <div class="form_body">
+        <div>
+          <input type="text" name="fname" id="" placeholder="Firstname" required maxlength="8" minlength="5" />
+          <small>Fist name cannot be empty</small>
+        </div>
+
+        <div>
+          <input type="text" name="lname" id="" placeholder="Lastname" required  maxlength="8" minlength="5" />
+          <small>Last name cannot be empty</small>
+        </div>
+
+        <div>
+          <input type="email" name="mail" id="" placeholder="Email Address"required />
+          <small>Looks like this is not an email</small>
+        </div>
+
+        <div>
+          <input type="password" name="pasword" id="" placeholder="Password"required  max="7" min="4"/>
+          <small>Password cannot be empty</small>
+        </div>
+        
+          <button type="submit" class="submit">CLAIM YOUR FREE TRIAL</button>
+          <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services </a></p>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
